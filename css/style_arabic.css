@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+    --bg_top_color:#f8f9fd;
+    --radio_btn_color:#e89b2e;
+    --font_top_list_color:#616161;
+    --font_top_list_hovr_color:#e99c2e;
+    --main_font_color:#998e82;
+    --paragraph_font_color:#a19f9d;
+    --arrival_rectangle:#c59654;
+    --arrival_rec_green:#0ac20a;
+    --collection_bg_color:#394041de;
+}
+/****************************************general***********************************************/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+}
+.d_flex{
+    display: flex;
+}
+.m_flex{
+    display: flex;
+}
+.text_color{
+    font-size: .8rem;
+    font-weight:bolder;
+    color: var(--font_top_list_color);
+}
+.size{
+    justify-content: space-between;
+}
+.list_icon{
+    margin-top: 2rem;
+}
+.paragraph{
+    line-height: 1.5rem;
+}
+.text_color_dgrey{
+    color: var(--font_top_list_color);
+}
+.btn{
+    width: 9rem;
+    height: 2.5rem;
+    background-color: var(--font_top_list_hovr_color);
+    color:var(--bg_top_color);
+    border-color: transparent;
+    margin-top: 1rem;
+}
+.new_late_feat{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+/****************************************top_main***********************************************/
+.main_top{
+    background-color: var(--bg_top_color);
+    justify-content: space-between;
+}
+.top{  
+    width: 80%;
+    margin: auto;
+    }
+.main_top ul{
+    padding: 0;
+    margin: auto;
+}
+.main_top ul li{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    list-style-type: none; 
+    margin-top: 2.5rem;
+}
+a{
+    text-decoration-line:none;
+
+}
+li a:hover {
+    color: var(--font_top_list_hovr_color);
+}
+.icon_gear{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.left{
+    width: 48%;
+}
+.left h2{
+    font-size: .9rem;
+    margin-top: 5rem;
+}
+.right{
+    text-align: center;
+    width:40rem;
+    justify-content: space-around;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+}
+.right img{
+    width: 60%;
+    text-align: center;
+
+}
+.main h4{
+    font-size: .8rem;
+    margin-top: 1rem;
+    padding-left: 3rem;
+}
+.btn{
+    margin-left: 2rem;
+}
+.btn:hover{
+   background-color: #616161;
+}
+.learn_more{
+    color: #e99c2e;
+}
+.learn_more:hover{
+    color: var(--collection_bg_color) ;
+}
+.text_size{
+    font-size: 2rem;
+    margin-top: 0;
+}
+.main h4 span{
+    text-decoration: line-through;
+}
+.input_main{
+    text-align: center;
+    color: var(--font_top_list_hovr_color);
+    padding-top:5rem;
+    padding-bottom:3rem;
+}
+.cir1{
+    font-size: 1rem;
+}
+.center{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.arm{
+    background-color: var(--bg_top_color);
+    width:23%;
+    text-align: center;
+}
+.r_arm{
+    padding-top: 2.4rem;
+    margin-bottom: 1rem;
+}
+.design{
+    background-color: var(--bg_top_color);
+    width: 46%;
+    padding: 2.2rem 1rem;
+}
+.design .document{
+    padding-right: 1rem ;
+}
+.doc_btn{
+    width: 8rem;
+    height: 2.4rem;
+    background-color: var(--bg_top_color);
+    font-size: .9rem;
+    border-width: .07rem;
+}
+.doc_btn:hover{
+    background-color:var(--radio_btn_color);
+    color: var(--bg_top_color);
+}
+.design h5 span{
+    color:var(--font_top_list_hovr_color)
+}
+.design h5{
+    margin-bottom:0.9rem;
+};
+/***********************************************new arrival**********************************************/
+.arrival{
+    width:80%;
+    margin: auto;
+}
+.wooden_chair{
+    margin: auto;
+    width:80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.first{
+    width:23%;
+}
+.wooden,
+.wood_non{
+    width:100%;
+    height:17rem;
+    background-color: var(--bg_top_color);
+    margin: auto;
+    position: relative;
+    vertical-align: middle;
+}
+
+.wooden::before{
+    content: "sale";
+    display: block;
+    width: 3rem;
+    height: 1.5rem;
+    background-color: var(--arrival_rectangle);
+    position: absolute;
+    right: 1%;
+    bottom: 15rem;
+    color: var(--bg_top_color);
+    text-align: center;
+    line-height: 1.5rem;
+    animation-name: example;
+    animation-duration: 4s;
+}
+@keyframes example {
+    from {background-color:red;}
+    to {background-color: yellow;}
+  }
+.green::before{
+    background-color: var(--arrival_rec_green);
+}
+.photo_arrival {
+text-align: center;
+margin-top: 3rem;
+}
+.photo_arrival img {
+    margin-top: 5rem;
+    }
+.txt_wood{
+    text-align: center;
+    font-size: 1rem;
+}
+/***************************************collection***********************************/
+.text{
+    color: var(--bg_top_color);
+    margin-top: 0;
+    line-height: 1.3rem;
+    font-weight: bolder;
+    width: 160%;
+    padding-top: 10rem;
+    padding-right: 25%;
+}
+.txt_1{
+    font-size: small;
+    padding-top: 2rem;
+}
+.txt_span{
+    color: var(--font_top_list_hovr_color);
+}
+.collecetion_img{
+    padding-top: 6rem;
+    width: 45%;
+    position:absolute;
+    top:139rem ;
+    margin: auto;
+    right: 47%;
+}
+.collection{
+    height: 37rem;
+    margin-top: 4rem;
+    background-image: url(../images/collection/sofa-collection-banner.jpg);
+}
+.rect{
+    width: 35%;
+    height: 100%;
+    background-color: var(--collection_bg_color);
+    position: relative;
+}
+
+.rect_parent{
+    width:100%;
+    height: 100%;
+}
+/*********************************************feature*****************************************/
+.star{
+    color:#e0db54 ;
+    font-size: smaller;
+}
+.rstar{
+    color:#998e82;
+    font-size: smaller;
+}
+.f_photo img{
+    width: 96%;
+}
+.f_photo{
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 2rem;
+}
+.review{
+    margin:.3rem auto;
+}
+.r_flex{
+    justify-content: space-between;
+}
+.feature_product{
+    width: 80%;
+    margin :auto;
+}
+.f_txt{
+    margin-bottom: .3rem;
+    margin-top: .3rem;
+}
+.b_photo{
+    width: 30%;
+}
+.l_blog{
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.b_photo img{
+    width: 100%;
+}
+.brands{
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.client_brands{
+    width: 100%;
+    background-color: var(--bg_top_color);
+    margin-top:2rem;
+}
+.footer{
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+}
+.icon_1{
+    width: 100%;
+    background-color: var(--bg_top_color);
+    color: var(--main_font_color);
+    margin: auto;
+    text-align: center;
+    font-size: smaller;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.bottom_input input{
+    position: relative;
+}
+.bottom_input input::before{
+    content:	2B9E;
+    display: block;
+    position: absolute;
+    color:var(--font_top_list_hovr_color);
+    font-size: 40rem;
+}
+.trial{
+    position: relative;
+} 
+.trial::before{
+    content:"2B9E";
+    display: block;
+    color:var(--font_top_list_hovr_color);
+    position: absolute;
+}
+.circle_btn{
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--font_top_list_hovr_color);
+    position: fixed;
+    right:1rem;
+    bottom: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.bottom_input{
+    position: relative;
+}
+.input_shade{
+    height: 3rem;
+    border-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.arrow{
+position: absolute;
+right: 84%;
+bottom:-220.7rem;;
+color: var(--font_top_list_hovr_color);
+transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:850px) {
+
+    .d_flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: smaller;
+    }
+    .top_list ul {
+        justify-content: space-around;
+        padding-left:0;
+        margin-top: 0;
+    }
+    .top_list ul li{
+    margin-top: 1rem;
+    }
+    .center{
+        flex-wrap: wrap;
+    }
+    .design{
+        width: 85%;
+    }
+    .arm{
+        width: 85%;
+        margin-top: 1rem;
+    }
+        .photo_arrival {
+        width: 80%;
+    }
+    .first{
+        width:80%;
+    }
+    wooden
+    div#arm_first{order:1};
+    div#arm_second{order:2};
+    div#arm_third{order:3}
+    .left{
+        width:90%;
+        text-align: center;
+    }
+    .left h2{
+        margin-top: 1rem;
+    }
+    .left h3{
+        margin-bottom: 1rem;
+    }
+    .right img {
+        width: 50%;
+        margin: auto;
+    }
+    .input_main{
+        padding-top: 2rem;
+    }
+    .btn{
+        margin-bottom: 1rem;
+    }
+    .text{
+        width:260%;
+        text-align: center;
+        padding-left: 3rem;
+        text-align: center;
+        padding-top: 2rem;
+}
+.photo_arrival{
+    margin-top: 0;
+}
+.txt_1{
+    padding-top: 0cap;
+}
+.collection{
+    background-image: linear-gradient(var(--collection_bg_color),var(--collection_bg_color)),url(../images/collection/sofa-collection-banner.jpg);
+    height:15rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-left: 0;
+    margin-top: 0%;
+}
+.b_photo{
+    width: 80%;
+}
+.brands img{
+margin-bottom: 3rem;
+}
+.information h5{
+    font-size:large;
+    text-align: center;
+    margin: auto;
+}
+.information h6{
+    text-align: center;
+}
+}
